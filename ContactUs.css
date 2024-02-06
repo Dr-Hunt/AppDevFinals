@@ -1,0 +1,406 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body
+{
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* HEADER STYLE STARTS HERE */
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4vh 5vh;
+    background: #273550;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 12vh;
+}
+
+.HeaderLogo
+{
+    margin-left: -4vh;
+    width: 20vh;
+}
+
+.navbar a
+{
+    position: relative;
+    font-size: 2vh;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 5vh;
+    
+}
+
+.navbar a::before
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: .5vh;
+    background: #fff;
+    transition: .5s;
+}
+
+.navbar a:hover::before
+{
+    width: 100%;
+}
+
+/* HEADER STYLE ENDS HERE */
+
+/* WEBSITE CONTENT STYLE STARTS HERE */
+
+.BackPhoto1
+{
+    margin-top: 12vh;
+    max-width: 100%;
+}
+
+.back1
+{
+    max-width: 100%;
+    height: 45vh;
+    display: block;
+    margin: auto;
+    filter: blur(6px);
+}
+
+.ContactUs
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23%;
+    height: 37%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: -10vh;
+}
+
+.FrontPhoto1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27vh;
+}
+
+.front1
+{
+    height: 58vh;
+    width: auto;
+}
+
+.FirstRow
+{
+    margin-top: 30vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.SecondRow, .ThirdRow, .FourthRow
+{
+    margin-bottom: 1.5vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.FirstRowInput, .SecondRowInput
+{
+    margin: 1vw;
+    height: 5vh;
+    width: 27vw;
+    padding-left: .5vw;
+    border-radius: 1vh;
+    font-size: 2vh;
+}
+
+.Inquiry
+{
+    width: 85.5vw;
+    height: 5vh;
+    border: 2px solid #000000;
+    border-radius: 1vh;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: 2vh;
+}
+
+.YourMessage
+{
+    height: 20vh;
+    width: 150vh;
+    padding: 2vh;
+    font-size: 2vh;
+    border: 2px solid #000000;
+    border-radius: 1vh;
+}
+
+.Toggle
+{
+    margin-top: 3vh;
+    margin-left: 6.7vw;
+    display: flex;
+    align-items: center;
+}
+
+.Toggle p
+{
+    margin-left: 2vw;
+    font-size: 2vh;
+}
+
+/* Styling for the toggle switch container */
+.Switch
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Styling for the slider */
+.Slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+/* Styling for the slider's appearance when checked (active) */
+.Slider:before
+{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Styling for the input (checkbox) */
+input[type="Checkbox"]
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Styling for the slider when the checkbox is checked */
+input[type="Checkbox"]:checked + .Slider
+{
+    background-color: #273550;
+}
+
+/* Styling for the slider's appearance when the checkbox is checked */
+input[type="Checkbox"]:checked + .Slider:before
+{
+    transform: translateX(26px);
+}
+
+.LocalorForeign
+{
+    font-size: 2vh;
+    margin-top: 3vh;
+    margin-left: 6.7vw;
+    line-height: 2.5;
+    text-align: left;
+}
+
+.LocalorForeign label
+{
+    margin-right: 2vw;
+}
+
+.SubmitPart
+{
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+.Submit
+{
+    background-color: lightgray;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 6.7vw;
+    margin-top: 1vh;
+    font-size: 2vh;
+}
+
+.Submit:hover
+{
+    background-color: #273550;
+    color: #fff;
+}
+
+
+/* WEBSITE CONTENT STYLE ENDS HERE
+
+/* FOOTER STYLE STARTS HERE */
+
+.footerContactUs
+{
+    background-color: #273550; /* Set your preferred background color */
+    color: #fff; /* Set text color to white */
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 20px;
+    padding-right: 80px;
+    display: flex; /* Use flexbox to arrange content */
+    justify-content: space-between;
+    align-items: top; /* Center content vertically */
+    width: 100%;
+    margin-top: auto;
+    height: auto;
+    position: absolute;
+}
+
+/* Style the logo section */
+.FooterLogoSection
+{
+    display: flex; /* Use flexbox to arrange the logo */
+    align-items: center; /* Center the logo vertically */
+    padding-left: 20px; /* Add left padding to the logo section */
+}
+
+/* Style the footer icons container */
+.FooterFirstColumn
+{
+    display: flex; /* Use flexbox to arrange icons horizontally */
+    flex-direction: column; /* Place icons and descriptions vertically */
+    margin-right: 10px; /* Add some spacing to the right of the icons container */
+}
+
+/* Style the footer icon */
+.FooterIcon
+{
+    display: flex; /* Use flexbox to arrange icon and description horizontally */
+    align-items: center; /* Center icon and description vertically */
+    margin-bottom: 10px; /* Add some spacing between icons and descriptions */
+    text-align: left;
+    font-weight: 100;
+}
+
+.FooterFirstColumnIcon
+{
+    height: 4vh;
+    margin-right: 2vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    
+}
+
+.FooterColumn
+{
+    width: 20%;
+}
+
+.FooterLogo
+{
+    height: 12vh;
+    padding-top: 1.5vh;
+    padding-bottom: 2vh;
+}
+
+/* Style the description text */
+.FooterIcon p
+{
+    font-size: 18px; /* Set the desired font size for descriptions */
+    margin: 0; /* Remove default margin to align text with the icon */
+    line-height: 1.2; /* Adjust line height for multi-line text */
+}
+
+.SocialIcon
+{
+    height: 4vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+.FooterColumn h3
+{
+    font-weight: 100;
+    padding-bottom: 2vh;
+    position: relative;
+}
+
+.FooterColumn li
+{
+    text-decoration: none;
+    font-weight: 100;
+}
+
+/* Remove bullets from the <li> tags */
+.FooterColumn ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+.FooterColumn ul li
+{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between icon and text as needed */
+    padding-bottom: .3vh;
+}
+
+.FooterColumn ul li a
+{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between icon and text as needed */
+    padding-bottom: .3vh;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.FooterColumn ul li a:hover
+{
+    color: #D3D3D3;
+    padding-left: 1vh;
+}
+
+/* FOOTER STYLE ENDS HERE */
